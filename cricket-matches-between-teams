@@ -1,0 +1,15 @@
+import random
+a=int(input("enter no of teams:"))
+t=[]
+for i in range(a):
+    n=(input("enter team name:"))
+    t.append(n)
+  me=int(input("enter no of meets(no . of matches b/w the teams)"))
+ma=[]
+for i in range(a-1):
+    for j in range(i+1,a):
+        for k in range(me):
+            ma.append([t[i],t[j]])
+random.shuffle(ma)
+for i in range(len(ma)):
+    print("Match{} :{} v/s {} ".format(i+1,ma[i][0],ma[i][1]))
