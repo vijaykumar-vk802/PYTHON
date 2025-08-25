@@ -1,0 +1,7 @@
+a=['vijay','raju','shiva','raju']
+b=[[80,90,85,93],[80,96,95,93],[80,70,85,93],[80,90,85,93]]
+c=len(a)
+for i in range(c):
+    for j in range(len(b)):
+        p=sum(b[i])/400*100
+    print(i+1,a[i],p,"%")
